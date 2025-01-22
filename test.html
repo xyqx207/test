@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF - 8">
+    <title>黑幕效果示例</title>
+    <style>
+        /* 隐藏内容的样式，初始隐藏 */
+      .spoiler {
+            color: black;
+            background-color: black;
+            cursor: pointer;
+            /* 添加这一行，使黑幕尺寸与文字尺寸更一致 */
+            display: inline - block;
+        }
+	  .spoilera{
+	        color: black;
+            background-color: black;
+            cursor: pointer;
+            /* 添加这一行，使黑幕尺寸与文字尺寸更一致 */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+<center>
+<iframe src="https://player.bilibili.com/player.html?&bvid=BV1Xw411T7WC&page=1&as_wide=1&high_quality=1&danmaku=0&autoplay=true" width=640 height=400 style="border: medium none;"></iframe>
+</center>
+    <span>这里有个黑幕效果：<span class="spoiler"><del>性爱</del></span></span> <span class="spoiler">真是服了你们</span>
+   <span class="spoiler">我说五十一中是个山驴逼信不信</span>
+   666<span class="spoiler">gi</span>
+ <tr><span class="spoiler">C/N test</span></tr>
+ <p class="spoiler"><b><del>接下来是不能播的 限 制 级 内 容 </del></b></p>
+    <script>
+        // 获取所有具有.spoiler类的元素
+        var spoilers = document.querySelectorAll('.spoiler');
+        for (var i = 0; i < spoilers.length; i++) {
+            var spoiler = spoilers[i];
+            // 鼠标悬停时显示内容
+            spoiler.onmouseover = function () {
+                this.style.color = 'initial';
+                this.style.backgroundColor = 'initial';
+            }
+            // 鼠标移开时恢复隐藏状态
+            spoiler.onmouseout = function () {
+                this.style.color = 'black';
+                this.style.backgroundColor = 'black';
+            }
+        }
+		
+		 var spoilersa = document.querySelectorAll('.spoilera');
+        for (var i = 0; i < spoilersa.length; i++) {
+            var spoiler = spoilers[i];
+            // 鼠标悬停时显示内容
+            spoilera.onmouseover = function () {
+                this.style.color = 'initial';
+                this.style.backgroundColor = 'initial';
+            }
+            // 鼠标移开时恢复隐藏状态
+            spoilera.onmouseout = function () {
+                this.style.color = 'black';
+                this.style.backgroundColor = 'black';
+            }
+        }
+    </script>
+</body>
+
+</html>
+ 
